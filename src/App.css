@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+
+.app {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: linear-gradient(0deg, #d9dbdc 82%, #00A783 18%);
+}
+
+.app__body {
+  display: flex;
+  background-color: #ededed;
+  height: 95vh;
+  width: 97vw;
+}
