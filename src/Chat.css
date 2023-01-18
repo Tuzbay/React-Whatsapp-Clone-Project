@@ -75,6 +75,36 @@
     justify-content: space-between;
     min-width: 50px;
     margin-right: 10px;
+    position: relative;
+}
+
+/* ! Dropdown ! */
+
+.menu {
+    position: absolute;
+    top: 120px;
+    right: 0 !important;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1), 0 0 1px;
+    border-radius: 2px;
+    padding: 5px 0;
+    z-index: 99;
+}
+
+.menuList {
+    padding: 0;
+}
+
+.menuListItem {
+    padding: 10px 40px 10px 20px !important;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+    width: 130px;
+}
+
+.menuListItem:hover {
+    background-color: #f3f3f3;
 }
 
 .chat__body {
@@ -127,4 +157,87 @@
 .chat__footer .MuiSvgIcon-root {
     padding: 10px;
     color: gray;
+}
+
+/* ! Documantation ! */
+.documentation {
+    width: 0;
+    height: 0;
+}
+
+.documentation__element {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    bottom: 310px;
+    left: -44px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.documentation__element>.MuiSvgIcon-root {
+    position: relative;
+
+}
+
+.documentation__element:nth-child(1) {
+    background: linear-gradient(0deg, #0EABF4 50%, #0795dc 50%);
+}
+
+.documentation__element:nth-child(2) {
+    background: linear-gradient(0deg, #5F66CD 50%, #5157AE 50%);
+}
+
+.documentation__element:nth-child(3) {
+    background: linear-gradient(0deg, #EC407A 50%, #D3396D 50%);
+}
+
+.documentation__element:nth-child(4) {
+    background: linear-gradient(0deg, #0070E6 50%, #0063CB 50%);
+}
+
+.documentation__element:nth-child(5) {
+    background: linear-gradient(0deg, #BF59CF 50%, #AC44CF 50%);
+}
+
+.documentation__element:nth-child(1)>.MuiSvgIcon-root,
+.documentation__element:nth-child(2)>.MuiSvgIcon-root,
+.documentation__element:nth-child(3)>.MuiSvgIcon-root,
+.documentation__element:nth-child(4)>.MuiSvgIcon-root,
+.documentation__element:nth-child(5)>.MuiSvgIcon-root {
+    color: white;
+}
+
+.documentation__element:nth-child(1):hover .popup,
+.documentation__element:nth-child(2):hover .popup,
+.documentation__element:nth-child(3):hover .popup,
+.documentation__element:nth-child(4):hover .popup,
+.documentation__element:nth-child(5):hover .popup {
+    visibility: visible
+}
+
+.popup {
+    position: relative;
+    bottom: 35px;
+    left: 60px;
+    font-weight: 300;
+    color: white;
+    background-color: #252525;
+    border-radius: 20px;
+    text-align: center;
+    width: 80px;
+    font-size: 14px;
+    height: 20px;
+    visibility: hidden;
+    transition: 0.2 ease-in visibility;
+}
+
+.photosvideos {
+    width: 120px;
+}
+
+.sticker {
+    width: 70px;
 }

@@ -1,3 +1,9 @@
+li {
+    list-style: none;
+}
+
+
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -7,18 +13,21 @@
 .sidebar__search {
     display: flex;
     align-items: center;
-    background-color: #f6f6f6;
+    background-color: white;
     height: 39px;
     padding: 10px;
+    border-bottom: 1px solid lightgray;
 }
 
 .sidebar__searchContainer {
     display: flex;
     align-items: center;
-    background-color: white;
-    width: 100%;
+    background-color: #F0F2F5;
+    width: 90%;
     height: 35px;
-    border-radius: 20px;
+    border-radius: 8px;
+    margin-right: 12px;
+
 }
 
 .sidebar__searchContainer>.MuiSvgIcon-root {
@@ -29,13 +38,25 @@
 .sidebar__searchContainer>input {
     border: none;
     margin-left: 10px;
+    width: 100%;
+    background-color: #F0F2F5;
+    outline: none;
+}
+
+.sidebar__searchContainer>input:focus::placeholder {
+    opacity: 0;
 }
 
 .sidebar__header {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    align-items: center;
     border-right: 1px solid lightgray;
+    padding: 5px;
+}
+
+.sidebar__header .avatar {
+    margin-left: 1rem;
 }
 
 .sidebar__headerRight {
@@ -43,6 +64,7 @@
     align-items: center;
     justify-content: space-between;
     min-width: 10vw;
+    position: relative;
 }
 
 .sidebar__chats {
@@ -58,4 +80,31 @@
 
 .sidebar__chats::-webkit-scrollbar-thumb {
     background-color: #b0b2b3;
+}
+
+/* ! Dropdown ! */
+
+.menu {
+    position: absolute;
+    top: 50px;
+    right: 18px;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1), 0 0 1px;
+    border-radius: 2px;
+    padding: 5px 0;
+}
+
+.menuList {
+    padding: 0;
+}
+
+.menuListItem {
+    padding: 10px 50px 10px 10px;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.menuListItem:hover {
+    background-color: #f3f3f3;
 }
