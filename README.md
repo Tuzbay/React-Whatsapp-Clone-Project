@@ -1,6 +1,6 @@
 # Whatsapp Clone Project with ReactJS
 
-A small web app that tries to imitate the whatsapp web application, you can create a new group, send messages, and have your user authentication feature thanks to Firebase.
+This project is a clone of Whatsapp's official website. My goal was to create a similar site using modern web development techniques where you can create new groups, send messages, and implement user authentication using Firebase.
 
 ## Video Presentation of the Project
 
@@ -15,19 +15,15 @@ https://user-images.githubusercontent.com/77413300/213550079-5b422845-37dd-48a4-
 - Firebase Firestore Database
 - Firebase Google Authentication
 
-## Getting Started with Create React App
+## To Run the Project, Follow the Steps Below
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-### Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository: 
+   ```sh
+   git clone https://github.com/Tuzbay/React-Whatsapp-Clone-Project.git
+2. Install Dependencies: 
+   ```sh
+   npm install
+3. Run the Project: 
+   ```sh
+   npm start
 
